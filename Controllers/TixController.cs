@@ -19,6 +19,7 @@ namespace BuyTixApi.Controllers
         [ProducesResponseType(typeof(List<ActiveMovie>), 200)]
         public IActionResult GetAllActiveMovies()
         {
+            //Get All Movies in the database
             return Ok(Business.Movies.GetAllActiveMovies());
         }
 
